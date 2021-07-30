@@ -1,0 +1,15 @@
+td{
+  text-align: left;
+  padding-left: 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  vertical-align: top;
+}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited{
+  color: black;
+  background-color:skyblue;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
+  background-color: #fff;
+}
