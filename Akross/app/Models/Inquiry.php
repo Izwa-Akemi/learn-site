@@ -9,4 +9,8 @@ class Inquiry extends Model
 {
     //use HasFactory;
     protected $table ='inquirys';
+
+    public function follows(){
+        return $this->hasMany('App\Models\Inquiry');
+    }
 }

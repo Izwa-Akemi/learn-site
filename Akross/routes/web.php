@@ -1,8 +1,11 @@
 <?php
 use App\Models\Inquiry;
 use App\Models\Counseling;
+use App\Models\Follow;
 use App\Http\Controllers\InquiryController;
 use App\Http\Controllers\CounselingController;
+use App\Http\Controllers\FollowController;
+use App\Http\Controllers\HeaderController;
 use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +26,7 @@ Route::post('/inquirys', [InquiryController::class, 'store']);
 
 //カウンセリング画面表示
 Route::get('/counselings', [CounselingController::class, 'index']);
+//フォロー画面表示
+
+//問合せ一覧画面表示
+Route::get('/inquiry_alls', [HeaderController::class, 'index']);

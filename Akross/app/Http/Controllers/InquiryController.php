@@ -47,5 +47,4 @@ class InquiryController extends Controller
     $inquirys->save();
     return redirect('/');
 }
-
 }
