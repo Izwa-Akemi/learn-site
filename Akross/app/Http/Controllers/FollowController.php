@@ -9,6 +9,6 @@ class FollowController extends Controller
 //問合せ画面の表示
 public function index()
 {
-  return view('inquirys');
+  return view('follows');
 }
 }

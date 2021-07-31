@@ -25,16 +25,16 @@
                 <th>実施</th>
                 <th>フォロー内容</th>
             </tr>
-            @foreach ($inquiry as $inquirys)
+            @foreach ($inquirys as $inquiry)
             <tr>
-                <td>$inquirys->student_name</td>
-                <td>$inquirys->created_at</td>
+                <td>{{ $inquiry->student_name }}</td>
+                <td>{{ $inquiry->created_at}}</td>
                 <td></td>
-                <td>$inquirys->reservation_day</td>
-                <td>$inquirys->teacher_id</td>
-                <td>$inquirys->follow_date</td>
-                <td>$inquirys->follow_type</td>
-                <td>$inquirys->follow_contents</td>
+                <td>{{ $inquiry->reservation_day }}</td>
+                <td>{{ $inquiry->teacher_id }}</td>
+                <td>{{ $inquiry->follow_date }}</td>
+                <td>{{ $inquiry->follow_type }}</td>
+                <td>{{ $inquiry->follow_contents }}</td>
             </tr>
             @endforeach
         </table>

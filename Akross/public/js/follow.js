@@ -1,19 +1,20 @@
 $(function () {
-    function loadFollow() {
+    /*function loadFollow() {
         $.ajax({
             type: 'GET',
-            url: 'follow.blade.php',
+            url: 'follows',
             dataType: 'php',
             success: function (data) {
-                $('#follow').php(data);
+                $('#follow').blade.php(data);
             },
             error: function () {
                 alert('error');
             }
         });
-    }
-    $('#follow').hide(loadFollow);
+    }*/
+    $('#follow').hide();
     $(".follow").on('click', function () {
-        $('#follow').toggle(loadFollow());
+        $('#follow').toggle();
+        $("#follow").load("/follows");
     })
 })

@@ -15,12 +15,12 @@
 </head>
 
 <body>
-<header>
-@include('layouts.headers')
-</header>
+    <header>
+        @include('layouts.headers')
+    </header>
     <main>
-        <form action="{{ url('inquirys') }}" method="POST" >
-          @csrf
+        <form action="{{ url('inquirys') }}" method="POST">
+            @csrf
             <table class="inquirys-table">
                 <tr>
                     <td>ID</td>
@@ -246,10 +246,12 @@
             <div class="button-list">
                 <ul class="button-list-item">
                     <li><button class="save">保存</button></li>
-                    <li><button class="counseling" type="button" formaction="{{ url('counselings') }}" formmethod="posy">カウンセリング</button></li>
-                    <li><button class="follow" type="button">フォロー状況</button></li>
+                    <li><button class="counseling" type="button" formaction="{{ url('counselings') }}" formmethod="GET">カウンセリング</button></li>
+                    <li><button class="follow" type="button" formaction="{{ url('follows') }}" formmethod="GET">フォロー状況</button></li>
                 </ul>
             </div>
+            <div id="counseling"></div>
+            <div id="follow"></div>
         </form>
     </main>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

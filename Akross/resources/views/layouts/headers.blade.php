@@ -11,7 +11,7 @@
 
             <ul class="header-img">
                 <li class="header-img-logo1"><img src="./image/logo.png" alt=""></li>
-                <li class="header-img-items"><a href="">問合せ入力</a></li>
+                <li class="header-img-items"><a href="{{ url('inquirys') }}">問合せ入力</a></li>
                 <li class="header-img-items"><a href="{{ url('inquiry_alls') }}">問合せ一覧</a></li>
                 <li class="header-img-items"><a href="">生徒情報入力</a></li>
                 <li class="header-img-items"><a href="">入金情報</a></li>

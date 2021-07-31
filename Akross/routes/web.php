@@ -27,6 +27,11 @@ Route::post('/inquirys', [InquiryController::class, 'store']);
 //カウンセリング画面表示
 Route::get('/counselings', [CounselingController::class, 'index']);
 //フォロー画面表示
+Route::get('/follows', [FollowController::class, 'index']);
+
 
 //問合せ一覧画面表示
-Route::get('/inquiry_alls', [HeaderController::class, 'index']);
+Route::get('/inquiry_alls', [HeaderController::class, 'inqueryAll']);
+
+//問合せ画面表示
+Route::get('/inquirys', [HeaderController::class, 'inquirys']);

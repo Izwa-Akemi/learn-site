@@ -25,7 +25,7 @@
             </table>
             <div id="tabs">
                 <ul>
-                    <li><a href="counseling_tab.html">提案</a></li>
+                    <li><a href="counseling_tabs.blade.php">提案</a></li>
                     <li id="loadA">
                         <button id="load">追加</button>
                     </li>

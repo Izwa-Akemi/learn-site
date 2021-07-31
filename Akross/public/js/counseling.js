@@ -1,19 +1,20 @@
 $(function(){
-    function loadCounseling() {
+    /*function loadCounseling() {
         $.ajax({
-            type: 'GET',
-            url: 'counselings.blade.php',
-            dataType: 'php',
+            type: 'POST',
+            url: '/counselings',
+            dataType: 'html',
             success: function (data) {
-                $('#counseling').php(data);
+                $('#counseling').html(data);
             },
             error: function () {
                 alert('error');
             }
         });
-    }
-    $('#counseling').hide(loadCounseling);
+    }*/
+    $('#counseling').hide();
     $(".counseling").on('click',function(){
-        $('#counseling').toggle(loadCounseling());
+        $('#counseling').toggle();
+        $("#counseling").load("/counselings");
        })  
 })
