@@ -1,0 +1,65 @@
+main{
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 100%;
+}
+td{
+  text-align: left;
+  padding-left: 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+input:not(.table-check),select{
+    width: 16rem;
+}
+.table-color{
+    background-color:#EBEBEB;
+}
+.button-color{
+    background-color: #1E96D2;
+    color: white;
+    padding: 0.2rem 1rem;
+    border: none;
+}
+.admission-color{
+    background-color: #C86464;
+    color: white;
+    padding: 0.2rem 1rem;
+    border: none;
+}
+.button-list{
+    margin:3rem auto;
+    width: 90%;
+}
+.button-list-item{
+    width: 90%;
+    margin-left: 8%;
+    display: flex;
+}
+.button-list-item li{
+   margin-right: 1.9rem;
+}
+.save{
+    padding: 0.2rem 3.0rem;
+    color: white;
+    background-color: #289614;
+}
+
+.counseling{
+    padding: 0.2rem 1.0rem;
+    color: white;
+    background-color: #968214;
+}
+.follow{
+    padding: 0.2rem 1.5rem;
+    color: white;
+    background-color: #968214;
+}
+#tabs{
+    width: 66%;
+}
+.print{
+    padding: 0.2rem 3.0rem;
+    color: white;
+    background-color: #C86414;
+}
