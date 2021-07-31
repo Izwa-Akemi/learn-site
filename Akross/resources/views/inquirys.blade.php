@@ -260,9 +260,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
-    <script src="{{ asset('js/counseling.js') }}"></script>
-    <script src="{{ asset('js/counseling_tab.js') }}"></script>
-    <script src="{{ asset('js/follow.js') }}"></script>
+    <script src="{{ mix('js/app.js') }}"></script>
+    <script src="{{ mix('js/counseling_tab.js') }}"></script>
+    <script src="{{ mix('js/follow.js') }}"></script>
+    <script src="{{ mix('js/counseling.js') }}"></script>
 </body>
 
 </html>
