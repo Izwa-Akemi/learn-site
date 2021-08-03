@@ -49,72 +49,72 @@
                     <tr>
                         <td><input type="text"></td>
                         <td><input type="text" style="width: 5rem;"></td>
-                        <td><input type="text" style="width: 25rem;"></td>
+                        <td><input type="text" style="width: 20rem;"></td>
                     </tr>
                     <tr>
                         <td><input type="text"></td>
                         <td><input type="text" style="width: 5rem;"></td>
-                        <td><input type="text" style="width: 25rem;"></td>
+                        <td><input type="text" style="width: 20rem;"></td>
                     </tr>
                     <tr>
                         <td><input type="text"></td>
                         <td><input type="text" style="width: 5rem;"></td>
-                        <td><input type="text" style="width: 25rem;"></td>
+                        <td><input type="text" style="width: 20rem;"></td>
                     </tr>
                     <tr>
                         <td><input type="text"></td>
                         <td><input type="text" style="width: 5rem;"></td>
-                        <td><input type="text" style="width: 25rem;"></td>
+                        <td><input type="text" style="width: 20rem;"></td>
                     </tr>
                     <tr>
                         <td><input type="text"></td>
                         <td><input type="text" style="width: 5rem;"></td>
-                        <td><input type="text" style="width: 25rem;"></td>
+                        <td><input type="text" style="width: 20rem;"></td>
                     </tr>
                     <tr>
                         <td><input type="text"></td>
                         <td><input type="text" style="width: 5rem;"></td>
-                        <td><input type="text" style="width: 25rem;"></td>
+                        <td><input type="text" style="width: 20rem;"></td>
                     </tr>
                     <tr>
                         <td><input type="text"></td>
                         <td><input type="text" style="width: 5rem;"></td>
-                        <td><input type="text" style="width: 25rem;"></td>
+                        <td><input type="text" style="width: 20rem;"></td>
                     </tr>
                     <tr>
                         <td><input type="text"></td>
                         <td><input type="text" style="width: 5rem;"></td>
-                        <td><input type="text" style="width: 25rem;"></td>
+                        <td><input type="text" style="width: 20rem;"></td>
                     </tr>
                     <tr>
                         <td><input type="text"></td>
                         <td><input type="text" style="width: 5rem;"></td>
-                        <td><input type="text" style="width: 25rem;"></td>
+                        <td><input type="text" style="width: 20rem;"></td>
                     </tr>
                     <tr>
                         <td><input type="text"></td>
                         <td><input type="text" style="width: 5rem;"></td>
-                        <td><input type="text" style="width: 25rem;"></td>
+                        <td><input type="text" style="width: 20rem;"></td>
                     </tr><tr>
                         <td><input type="text"></td>
                         <td><input type="text" style="width: 5rem;"></td>
-                        <td><input type="text" style="width: 25rem;"></td>
+                        <td><input type="text" style="width: 20rem;"></td>
                     </tr>
                     <tr>
                         <td><input type="text"></td>
                         <td><input type="text" style="width: 5rem;"></td>
-                        <td><input type="text" style="width: 25rem;"></td>
+                        <td><input type="text" style="width: 20rem;"></td>
                     </tr>
                     <tr>
                         <td><input type="text"></td>
                         <td><input type="text" style="width: 5rem;"></td>
-                        <td><input type="text" style="width: 25rem;"></td>
+                        <td><input type="text" style="width: 20rem;"></td>
                     </tr>
                 
                     <tr>
                         <td><input type="text"></td>
                         <td><input type="text" style="width: 5rem;"></td>
-                        <td><input type="text" style="width: 25rem;"></td>
+                        <td><input type="text" style="width: 20rem;"></td>
                     </tr>
                 </table>
             </div>

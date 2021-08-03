@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{{ asset('css/counseling.css') }}">
     <link rel="stylesheet" href="{{ asset('css/counseling_tab.css') }}">
     <link rel="stylesheet" href="{{ asset('css/follow.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 
 <body>
@@ -250,20 +251,14 @@
                     <li><button class="follow" type="button" formaction="{{ url('follows') }}" formmethod="GET">フォロー状況</button></li>
                 </ul>
             </div>
-            <div id="counseling"></div>
-            <div id="follow"></div>
         </form>
+        <div id="counseling"></div>
+        <div id="follow"></div>
+
     </main>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
     <script src="{{ mix('js/app.js') }}"></script>
-    <script src="{{ mix('js/counseling_tab.js') }}"></script>
-    <script src="{{ mix('js/follow.js') }}"></script>
     <script src="{{ mix('js/counseling.js') }}"></script>
+    <script src="{{ mix('js/follow.js') }}"></script>
 </body>
 
 </html>

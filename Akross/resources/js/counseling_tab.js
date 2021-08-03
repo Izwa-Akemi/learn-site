@@ -1,9 +1,10 @@
 $(function() {
-    $("input:submit, a, button", ".toolbar").button();
+    $("a, button", ".toolbar").button();
 
     $("#tabs").tabs();
     var tabCount = 1;
     var tabNavTmpl2 = "<li id='add{0}'><a href=\{{ url('counseling_tabs')}}\">提案 {2}</a></li>";
+    //var tabNavTmpl2 = "<li id='add{0}'><a href=\counseling_tabs.html\">提案 {2}</a></li>";
 
     $("#load").on('click',function () {
         ++tabCount;

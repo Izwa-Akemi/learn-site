@@ -26,3 +26,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+require('jquery-ui/ui/widgets/button.js');
+require('jquery-ui/ui/widgets/checkboxradio.js');
+require('jquery-ui/ui/widgets/controlgroup.js');
+require('jquery-ui/ui/widgets/tabs.js');
+require('jquery-ui/ui/widgets/tooltip.js');

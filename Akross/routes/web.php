@@ -26,11 +26,13 @@ Route::get('/', [InquiryController::class, 'index']);
 Route::post('/inquirys', [InquiryController::class, 'store']);
 
 //カウンセリング画面表示
-Route::get('/counselings', [CounselingController::class, 'index'])->name('counseling_tabs');
+//Route::get('/counselings', [CounselingController::class, 'index'])->name('counseling_tabs');
 
-//Route::get('/counselings', [CounselingController::class, 'index']);
+Route::get('/counselings', [CounselingController::class, 'index']);
 
-//Route::get('/counseling_tabs', [CounseringTabController::class, 'index']);
+Route::get('/counseling_tabs', [CounseringTabController::class, 'index']);
+
+
 //フォロー画面表示
 Route::get('/follows', [FollowController::class, 'index']);
 
