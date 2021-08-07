@@ -29,7 +29,7 @@
                 </tr>
                 <tr>
                     <td>日付</td>
-                    <td><input type="text" name="date"></td>
+                    <td><input type="date" name="date"></td>
                     <td><button class="button-color">今日</button></td>
                     <td><button class="button-color">昨日</button></td>
                 </tr>
@@ -37,10 +37,10 @@
                     <td>種別</td>
                     <td>
                         <select name="type_form">
-                            <option value="0"></option>
-                            <option value="1">個人</option>
-                            <option value="2">個人予約</option>
-                            <option value="3">法人</option>
+                        <option value="0"></option>
+                            @foreach($type_forms as $type_form)
+                            <option value="{{$type_form->type_form}}">{{$type_form->type_form}}</option>
+                            @endforeach
                         </select>
                     </td>
                 </tr>
@@ -81,47 +81,27 @@
                 </tr>
                 <tr>
                     <td>営業希望日</td>
-                    <td><input type="text" name="sales_date"></td>
+                    <td><input type="date" name="sales_date"></td>
                     <td>指定時間</td>
-                    <td><input type="text" name="sales_time"></td>
+                    <td><input type="time" name="sales_time"></td>
                 </tr>
                 <tr class="table-color">
                     <td>電話可能時間</td>
                     <td>
                         <select name="tell_possibled">
                             <option value="0"></option>
-                            <option value="1">10:00</option>
-                            <option value="2">10:30</option>
-                            <option value="3">11:00</option>
-                            <option value="4">11:30</option>
-                            <option value="5">12:00</option>
-                            <option value="6">12:30</option>
-                            <option value="7">13:00</option>
-                            <option value="8">13:30</option>
-                            <option value="9">14:00</option>
-                            <option value="10">14:30</option>
-                            <option value="11">15:00</option>
-                            <option value="12">15:30</option>
-                            <option value="13">16:00</option>
-                            <option value="14">16:30</option>
-                            <option value="15">17:00</option>
-                            <option value="16">17:30</option>
-                            <option value="17">18:00</option>
-                            <option value="18">18:30</option>
-                            <option value="19">19:00</option>
+                            @foreach($tell_possibleds as $tell_possibled)
+                            <option value="{{$tell_possibled->tell_possibled}}">{{$tell_possibled->tell_possibled}}</option>
+                            @endforeach
                         </select>
                     </td>
                     <td>曜日</td>
                     <td>
                         <select name="week">
                             <option value="0"></option>
-                            <option value="1">日</option>
-                            <option value="2">月</option>
-                            <option value="3">火</option>
-                            <option value="4">水</option>
-                            <option value="5">木</option>
-                            <option value="6">金</option>
-                            <option value="7">土</option>
+                            @foreach($weeks as $week)
+                            <option value="{{$week->week}}">{{$week->week}}</option>
+                            @endforeach
                         </select>
                     </td>
                 </tr>
@@ -130,11 +110,9 @@
                     <td>
                         <select name="reason">
                             <option value="0"></option>
-                            <option value="1">転職・就職のため</option>
-                            <option value="2">独立・フリーランス・在宅</option>
-                            <option value="3">資格取得</option>
-                            <option value="4">趣味</option>
-                            <option value="5">その他</option>
+                            @foreach($reasons as $reason)
+                            <option value="{{$reason->reason}}">{{$reason->reason}}</option>
+                            @endforeach
                         </select>
                     </td>
                     <td>その他</td>
@@ -143,32 +121,24 @@
                 <tr class="table-color">
                     <td>習得したいスキル</td>
                     <td>
-                        <select name="master_skill">
+                        <select name="skill">
                             <option value="0"></option>
-                            <option value="1">Webサイト制作・関連職種(Webデザイン・HTML/CSS/Javascript・Wordpress等・アクセス解析等)
-                            </option>
-                            <option value="2">プログラマー・サーバーサイド(Java・Python・PHP・サーバー・AWS等) </option>
-                            <option value="3">デザイン（Photoshop・illustrator・デザイナー志望）</option>
-                            <option value="4">広告・企画(マーケティング・アクセス解析・広告運用等)</option>
-                            <option value="5">【東京校のみ】写真加工・フォトレタッチ（レタッチャー志望） </option>
-                            <option value="6">何を学べばいいかわからない・未経験者カウンセリング・適性検査・業界について知りたい </option>
-                            <option value="7">その他</option>
+                            @foreach($skills as $skill)
+                            <option value="{{$skill->skill}}">{{$skill->skill}}</option>
+                            @endforeach
                         </select>
                     </td>
                     <td>その他</td>
-                    <td><input type="text" name="master_skill_another"></td>
+                    <td><input type="text" name="skill_another"></td>
                 </tr>
                 <tr class="table-color">
                     <td>現在のスキル</td>
                     <td>
                         <select name="current_skill">
                             <option value="0"></option>
-                            <option value="1">未経験、何となく言葉を聞いたことがある程度</option>
-                            <option value="2">昔携わっていたことがある、古い知識・経験はある </option>
-                            <option value="3">会社は業界の会社だが別担当のため詳しくはわからない</option>
-                            <option value="4">管理者・発注側の立場</option>
-                            <option value="5">別のスクールで学んだことがある</option>
-                            <option value="6">その他</option>
+                            @foreach($current_skills as $current_skill)
+                            <option value="{{$current_skill->current_skill}}">{{$current_skill->current_skill}}</option>
+                            @endforeach
                         </select>
                     </td>
                     <td>その他</td>
@@ -178,15 +148,10 @@
                     <td>知ったきっかけ</td>
                     <td>
                         <select name="know_trigger">
-                            <option value="1"></option>
-                            <option value="2">知人・友人の紹介</option>
-                            <option value="3">バナー広告 </option>
-                            <option value="4">チラシ・DM</option>
-                            <option value="5">検索エンジンから検索 </option>
-                            <option value="6">電車の車内広告を見て</option>
-                            <option value="7">ブログ・比較サイトをみて</option>
-                            <option value="8">短期講座に参加した</option>
-                            <option value="9">その他</option>
+                            <option value="0"></option>
+                            @foreach($know_triggers as $know_trigger)
+                            <option value="{{$know_trigger->know_trigger}}">{{$know_trigger->know_trigger}}</option>
+                            @endforeach
                         </select>
                     </td>
                     <td>その他</td>
@@ -198,30 +163,14 @@
                 </tr>
                 <tr>
                     <td>予約日</td>
-                    <td><input type="text" name="reservation_day"></td>
+                    <td><input type="date" name="reservation_day"></td>
                     <td>予約時間</td>
                     <td>
                         <select name="reservation_possible">
                             <option value="0"></option>
-                            <option value="1">10:00</option>
-                            <option value="2">10:30</option>
-                            <option value="3">11:00</option>
-                            <option value="4">11:30</option>
-                            <option value="5">12:00</option>
-                            <option value="6">12:30</option>
-                            <option value="7">13:00</option>
-                            <option value="8">13:30</option>
-                            <option value="9">14:00</option>
-                            <option value="10">14:30</option>
-                            <option value="11">15:00</option>
-                            <option value="12">15:30</option>
-                            <option value="13">16:00</option>
-                            <option value="14">16:30</option>
-                            <option value="15">17:00</option>
-                            <option value="16">17:30</option>
-                            <option value="17">18:00</option>
-                            <option value="18">18:30</option>
-                            <option value="19">19:00</option>
+                            @foreach($reservation_possibles as $reservation_possible)
+                            <option value="{{$reservation_possible->reservation_possible}}">{{$reservation_possible->reservation_possible}}</option>
+                            @endforeach
                         </select>
                     </td>
                 </tr>
@@ -230,12 +179,9 @@
                     <td>
                         <select name="teacher_id">
                             <option value="0"></option>
-                            <option value="1">井澤</option>
-                            <option value="2">島村</option>
-                            <option value="3">田畑</option>
-                            <option value="4">片桐</option>
-                            <option value="6">飯山</option>
-                            <option value="7">黒沢</option>
+                            @foreach($teachers as $teacher)
+                            <option value="{{$teacher->teacher_name}}">{{$teacher->teacher_name}}</option>
+                            @endforeach
                         </select>
                     </td>
                 </tr>
@@ -258,6 +204,7 @@
     </main>
     <script src="{{ mix('js/app.js') }}"></script>
     <script src="{{ mix('js/counseling.js') }}"></script>
+    <script src="{{ mix('js/counseling_tab.js') }}"></script>
     <script src="{{ mix('js/follow.js') }}"></script>
 </body>
 

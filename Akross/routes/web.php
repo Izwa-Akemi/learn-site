@@ -26,10 +26,10 @@ Route::get('/', [InquiryController::class, 'index']);
 Route::post('/inquirys', [InquiryController::class, 'store']);
 
 //カウンセリング画面表示
-//Route::get('/counselings', [CounselingController::class, 'index'])->name('counseling_tabs');
-
 Route::get('/counselings', [CounselingController::class, 'index']);
-
+//カウンセリング画面内容登録
+Route::post('/counseling/edit', [CounselingController::class, 'store']);
+//カウンセリングタブ画面
 Route::get('/counseling_tabs', [CounseringTabController::class, 'index']);
 
 
